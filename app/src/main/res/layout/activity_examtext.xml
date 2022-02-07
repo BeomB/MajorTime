@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f5ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/s"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="오답 노트"
+            android:textColor="#6495ED"
+            android:textSize="30dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#5286e3" />
+
+    <ScrollView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <!--            <TextView-->
+            <!--                android:background="@drawable/list_shape1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:textColor="#000000"-->
+            <!--                />-->
+
+            <TextView
+                android:id="@+id/examtitle"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/line_solve"
+                android:backgroundTint="#c9ddff"
+                android:fontFamily="@font/s"
+                android:padding="10dp"
+                android:text="1. 문제"
+                android:textColor="#383737"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/examboki"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/line_solve"
+                android:fontFamily="@font/b_font"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/btnshow"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_solve"
+                android:fontFamily="@font/b_font"
+                android:text="정답 보기"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/signtext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:id="@+id/examanswer"
+                android:fontFamily="@font/b_font"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:text="하하"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:background="@drawable/line_solve"
+                android:backgroundTint="#fcd5cf"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

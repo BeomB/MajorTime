@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.majortime">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/majortime_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/myTheme"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCdCCYvdZm2qhi_t2txunEUI9HOJhjRLx0" />
+
+        
+        <activity android:name="com.example.majortime.SplashActivity"
+            android:label="메이저타임"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.majortime.Login_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.majortime.TimeTable_Setting"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.majortime.SignIn_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.majortime.Home_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.majortime.HomeworkActivity">
+        </activity>
+        <activity android:name="com.example.majortime.HomeworkWriteActivity">
+        </activity>
+        <activity android:name="com.example.majortime.CircleListviewActivity"/>
+        <activity android:name="com.example.majortime.TextListviewActivity"/>
+        <activity android:name="com.example.majortime.ExamListviewActivity"/>
+        <activity android:name="com.example.majortime.MapsLibraryActivity"/>
+        <activity android:name="com.example.majortime.ActiveListviewActivity"/>
+        <activity android:name="com.example.majortime.SchoolBus_Internet"/>
+        <activity android:name="com.example.majortime.SchoolCalender_Internet"/>
+        <activity android:name="com.example.majortime.SchoolHome_Internet"/>
+        <activity android:name="com.example.majortime.SchoolSpeaker_Internet"/>
+        <activity android:name="com.example.majortime.SchoolLibrary_Internet"/>
+        <activity android:name="com.example.majortime.new1_Internet"/>
+        <activity android:name="com.example.majortime.new2_Internet"/>
+
+        <activity
+            android:name="com.example.majortime.TextWriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.majortime.TextMaintextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.majortime.CalcuActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.majortime.ExamMaintextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.majortime.ExamWriteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.majortime.CircleMaintextActivity"
+            android:screenOrientation="unspecified"/>
+        <activity android:name="com.example.majortime.CircleWriteActivity"
+            android:screenOrientation="unspecified"/>
+        <activity android:name="com.example.majortime.ActiveMaintextActivity"
+            android:screenOrientation="unspecified"/>
+        <activity android:name="com.example.majortime.ActiveWriteActivity"
+            android:screenOrientation="unspecified"/>
+
+        <receiver android:name="com.example.majortime.hwAlarmReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <service android:name="com.example.majortime.hwAlarmService"
+            android:enabled="true"/>
+
+<!--        <receiver android:name=".BroadcastD"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="false" />-->
+<!--        <service-->
+<!--            android:name=".MyNewIntentService"-->
+<!--            android:exported="false" >-->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+</manifest>

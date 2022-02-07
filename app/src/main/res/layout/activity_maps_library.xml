@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsLibraryActivity"
+    android:background="#f0f5ff">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/signtext"/>
+
+        <TextView
+            android:fontFamily="@font/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="학교 시설 보기"
+            android:textColor="#6495ED"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/i_school"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#5286e3" />
+
+    <LinearLayout
+        android:background="@drawable/list_shape"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="360dp"
+        android:layout_height="390dp">
+        <fragment
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/map_library"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="380dp"
+            tools:context=".MapsLibraryActivity" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/list_shape"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="360dp"
+        android:orientation="vertical"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            android:layout_gravity="center"
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/i_science"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text=" 중생관 :사회과학"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/book2"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text="학술정보관: 도서관"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/i_book"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text=" 영암관 :인문대학"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/student"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text=" 학생회관:학생업무"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/i_com"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text=" 성결관 :공과대학"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/i_school"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text=" 기념관 :예술,신학"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/b_font"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#f0f5ff">
+
+
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/signtext"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/s"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:text="동아리글 작성"
+        android:textColor="#6495ED"
+        android:textSize="30dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/btnfinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:background="@null"
+        android:fontFamily="@font/b_font"
+        android:text="완 료"
+        android:textColor="#6495ED"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+<View
+    android:layout_width="380dp"
+    android:layout_height="2dp"
+    android:layout_marginTop="10dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:background="#5286e3" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/maintitle"
+                android:background="@drawable/line_solve"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:backgroundTint="#c9ddff"
+                android:fontFamily="@font/b_font"
+                android:hint="제목 작성 : " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/mainttext"
+                android:background="@drawable/line_solve"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:gravity="left"
+                android:hint="내용 작성 : 내용작성시 주의해야할 사항\n \n 1.비속어 금지 \n\n2.광고글 금지\n\n3.간단하게 작성 " />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

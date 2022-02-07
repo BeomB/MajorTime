@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:fontFamily="@font/deliver_jua"
+            android:textColor="#000"
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:ems="10"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:padding="3dp"
+            android:fontFamily="@font/deliver_jua"
+            android:textColor="#000"
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:ems="10"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/delete"
+                android:background="#FFFFFFFF"
+                android:src="@drawable/ic_action_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+        <TextView
+
+            android:padding="3dp"
+            android:fontFamily="@font/deliver_jua"
+            android:textColor="#000"
+            android:id="@+id/timeshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+         <TextView
+             android:textColor="#000"
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+             android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/time_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

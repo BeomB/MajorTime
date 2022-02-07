@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clockstart_list">
+        <item>수업 시간을 선택하세요</item>
+        <item>1교시</item>
+        <item>2교시</item>
+        <item>3교시</item>
+        <item>4교시</item>
+        <item>5교시</item>
+        <item>6교시</item>
+        <item>7교시</item>
+        <item>8교시</item>
+        <item>9교시</item>
+        <item>1교시 ~ 2교시</item>
+        <item>2교시 ~ 3교시</item>
+        <item>3교시 ~ 4교시</item>
+        <item>4교시 ~ 5교시</item>
+        <item>5교시 ~ 6교시</item>
+        <item>6교시 ~ 7교시</item>
+        <item>7교시 ~ 8교시</item>
+        <item>8교시 ~ 9교시</item>
+        <item>1교시 ~ 3교시</item>
+        <item>2교시 ~ 4교시</item>
+        <item>3교시 ~ 5교시</item>
+        <item>4교시 ~ 6교시</item>
+        <item>5교시 ~ 7교시</item>
+        <item>6교시 ~ 8교시</item>
+        <item>7교시 ~ 9교시</item>
+    </string-array>
+</resources>

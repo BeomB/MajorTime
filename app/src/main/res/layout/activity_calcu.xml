@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f5ff"
+    android:orientation="vertical"
+    tools:context=".CalcuActivity">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#a6bbf5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_news"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:fontFamily="@font/s"
+                            android:paddingTop="55dp"
+                            android:gravity="center"
+                            android:text="학기 학점"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/score1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/s"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="20dp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/s"
+                            android:gravity="center"
+                            android:paddingBottom="55dp"
+                            android:text="이수 학점"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/score2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/s"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="20dp"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/student" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="29dp"
+                android:text="학점 계산"
+                android:fontFamily="@font/s"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/line_examlist"
+                android:backgroundTint="#b0c5ff" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/signtext"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/calculation_line3"
+        android:backgroundTint="#b0c5ff"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="30dp"
+            android:text="과목명"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:fontFamily="@font/s"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:text="학점"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:fontFamily="@font/s"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="성적"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:fontFamily="@font/s"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="38dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/line_examlist">
+
+        <ScrollView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject1"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject1"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s1"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject2"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject2"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject3"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject3"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s3"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject4"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject4"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s4"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject5"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject5"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s5"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+
+                    <EditText
+                        android:id="@+id/subject6"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject6"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s6"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line">
+
+                    <EditText
+                        android:id="@+id/subject7"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject7"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s7"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/calculation_line2">
+
+                    <EditText
+                        android:id="@+id/subject8"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="과목 입력"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editsubject8"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="학점 입력" />
+
+                    <Spinner
+                        android:id="@+id/s8"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:entries="@array/학점" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

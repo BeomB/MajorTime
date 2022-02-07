@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f5ff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/s"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="과제 설정"
+            android:textColor="#6495ED"
+            android:textSize="30dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#5286e3" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:fontFamily="@font/s"
+            android:id="@+id/titleedit"
+            android:hint="과목명"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/line_solve"
+            android:backgroundTint="#c9ddff"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/s"
+            android:id="@+id/contentedit"
+            android:hint="과제내용"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:backgroundTint="#c9ddff"
+            android:background="@drawable/line_solve"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:fontFamily="@font/s"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="#ed85a6"
+            android:text="과제 기간을 입력하세요"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/line_solve"
+            android:backgroundTint="#c9ddff"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:calendarViewShown="false"/>
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/s"
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:text="취소"
+            android:gravity="center"/>
+        <Button
+            android:background="@drawable/btn_bg"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/s"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/select"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="저장"/>
+    </LinearLayout>
+</LinearLayout>

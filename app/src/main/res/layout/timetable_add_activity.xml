@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f0f5ff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/s"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="시간표 설정하기"
+                android:textColor="#6495ED"
+                android:textSize="30dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#5286e3" />
+
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:hint="과목 입력"
+            android:background="@drawable/line_solve"
+            android:backgroundTint="#f7f7f7"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/classroom"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:hint="강의실"
+            android:background="@drawable/line_solve"
+            android:backgroundTint="#f7f7f7"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/professor_name"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:hint="교수님 성함"
+            android:background="@drawable/line_solve"
+            android:backgroundTint="#f7f7f7"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <RadioGroup
+                android:id="@+id/RBgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RBMon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="월요일"/>
+
+                <RadioButton
+                    android:id="@+id/RBTue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="화요일"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/RBWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="수요일"/>
+                <RadioButton
+                    android:id="@+id/RBThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="목요일"/>
+                <RadioButton
+                    android:id="@+id/RBFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="금요일"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/DaySelect"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:text="날짜 선택 완료"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#6495ED"/>
+
+<!--                <ToggleButton-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:id="@+id/AlarmSetBtn"-->
+<!--                    android:layout_width="165dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:textOn="알람 (ON)"-->
+<!--                    android:textOff="알람 (OFF)"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:onClick="onToggleClicked"-->
+<!--                    android:backgroundTint="#83dcb7"/>-->
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/spinnerClock"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#f7f7f7"
+            android:background="@drawable/line_timetable"/>
+
+        <Button
+            android:id="@+id/timetable_setting_complete"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6495ED"
+            android:text="완료"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

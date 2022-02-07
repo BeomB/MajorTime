@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogmes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:textColor="#000"
+        android:fontFamily="@font/s"
+        android:text="정말 삭제하시겠습니까?"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>
